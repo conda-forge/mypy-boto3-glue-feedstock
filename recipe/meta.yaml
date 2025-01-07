@@ -1,5 +1,5 @@
 {% set name = "mypy-boto3-glue" %}
-{% set version = "1.35.87" %}
+{% set version = "1.35.93" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: d1d5f1bb5c5297045a1a650a6672c46a319e3cf373085d2303c2179dc5b46d7d
+  sha256: 27759a83ffa5414b2589da83625816a3c7cb97600fec68578bd3012a9ae20ee8
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - pip
     - setuptools
   run:
-    - typing_extensions >=4.1.0
+    - typing_extensions
     - python >=3.8
     - boto3
     - typing-extensions >=4.1.0
