@@ -1,5 +1,5 @@
 {% set name = "mypy-boto3-glue" %}
-{% set version = "1.37.29" %}
+{% set version = "1.37.31" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 2cbef39fd5a307b3721583766ece785fdbf98be6b1d86a430c5ccc726eade4dd
+  sha256: c14a1f6f3afc268c6b6ecc5582239315d64139bc4b9a5eb23aa4d522d57bdde1
 
 build:
   noarch: python
