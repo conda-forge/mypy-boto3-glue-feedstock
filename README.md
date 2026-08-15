@@ -42,31 +42,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `mypy-boto3-glue` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install mypy-boto3-glue
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install mypy-boto3-glue
 ```
 
-It is possible to list all of the versions of `mypy-boto3-glue` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add mypy-boto3-glue
+# for installing globally
+pixi global install mypy-boto3-glue
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `mypy-boto3-glue` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search mypy-boto3-glue --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search mypy-boto3-glue --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search mypy-boto3-glue --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -78,6 +120,8 @@ mamba repoquery whoneeds mypy-boto3-glue --channel conda-forge
 # List dependencies of `mypy-boto3-glue`:
 mamba repoquery depends mypy-boto3-glue --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
